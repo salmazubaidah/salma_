@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-family: "Poppins", sans-serif;
+      }
+      .header {
+        grid-area: header;
+        font-size: 30px;
+        text-align: center;
+      }
+      .main1 {
+        grid-area: main1;
+        text-align: center;
+      }
+      .main2 {
+        grid-area: main2;
+        text-align: center;
+      }
+      .main3 {
+        grid-area: main3;
+        text-align: center;
+      }
+      .main4 {
+        grid-area: main4;
+        text-align: center;
+      }
+      img {
+        padding: 30px;
+        border-radius: 20px;
+      }
+      .footer {
+        font-size: 20px;
+        grid-area: footer;
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 10px;
+        height: 100px;
+        line-height: 100px;      
+        font-weight: 800;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "header header header header"
+          "main1 main2 main3 main4"
+          "main1 main2 main3 main4"
+          "footer footer footer footer";
+        grid-template-rows: 1fr 1fr 1.5fr 1fr;
+        gap: 10px;
+        background-color: rgb(102, 0, 29);
+        padding: 20px;
+        height: 97vh;
+      }
+
+      .grid-container > div {
+        background-color: rgb(226, 154, 171);
+        padding: 20px 0;
+        margin: 0;
+        padding: 10;
+      }
+</style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="header">
+      <h1>RAINBOW CAKE</h1>
+    </div>
+    <div class="main1">
+      <img src="img/cake1.jpg" width="200px" height="200px" />
+      <p><b>Strawbery Cake</b></p>
+    </div>
+    <div class="main2">
+      <img
+        src="img/cake2.jpg"
+        width="200px"
+        height="200px"
+  
+      />
+      <p><b>Cake coklat</b></p>
+    </div>
+    <div class="main3">
+      <img src="img/cake3.jpg" width="200px" height="200px" />
+      <p><b>Roll Cake</b></p>
+    </div>
+    <div class="main4">
+      <img src="img/cake4.jpg" width="200px" height="200px" />
+      <p><b>Choko ball Cake</b></p>
+    </div>
+    <div class="footer">Instagram: @alya_slm</div>
+    
+  </div>
+</body>
+</html>
